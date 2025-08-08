@@ -1,0 +1,14 @@
+{
+  "login": {
+    "title": "Welcome back",
+    "description": "Login to your Acme Inc account",
+    "email": "Email",
+    "password": "Password",
+    "button": "Login",
+    "forgot": "Forgot your password?",
+    "info": "By using our system, you agree to our",
+    "info1": "Terms of Service",
+    "info2": "and",
+    "info3": "Privacy Policy"
+  }
+}

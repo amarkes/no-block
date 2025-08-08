@@ -1,0 +1,14 @@
+{
+  "login": {
+    "title": "Seja bem vindo",
+    "description": "Faça seu login para se connectar ao sistema",
+    "email": "Email",
+    "password": "Senha",
+    "button": "Logar",
+    "forgot": "Esqueceu sua senha?",
+    "info": "Ao usar nosso sistema, você concorda com nossos",
+    "info1": "Termos de uso",
+    "info2": "e nossa",
+    "info3": "Política de privacidade"
+  }
+}

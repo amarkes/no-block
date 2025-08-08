@@ -45,7 +45,7 @@ export default function LoginPage({ className, ...props }) {
                     </div>
                     <Input id="password" type="password" />
                   </div>
-                  <Button type="submit" className="w-full">
+                  <Button className="w-full cursor-pointer">
                     {t("login.forgot")}
                   </Button>
                   {/* <div className="text-center text-sm">

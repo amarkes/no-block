@@ -9,7 +9,7 @@ export default function FloatingActions() {
   const { i18n } = useTranslation();
 
   return (
-    <div className="fixed top-1/2 right-0 transform -translate-y-1/2 flex items-center">
+    <div className="fixed md:top-1/2 top-1/5 right-0 transform -translate-y-1/2 flex items-center">
       <div
         className={`flex items-center gap-2 bg-background border border-border rounded-l-full px-2 py-1 shadow-lg transition-all duration-300 ${
           open

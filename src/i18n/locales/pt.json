@@ -10,5 +10,168 @@
     "info1": "Termos de uso",
     "info2": "e nossa",
     "info3": "Política de privacidade"
+  },
+  "terms": {
+    "title": "Termos de Uso",
+    "lastUpdated": "Última atualização: {{date}}",
+
+    "acceptance": {
+      "title": "1. Aceitação dos Termos",
+      "p1": "Ao acessar ou utilizar este site/aplicativo (\"Serviço\"), você concorda em cumprir estes Termos de Uso e nossa Política de Privacidade. Caso não concorde com qualquer condição, recomendamos que não utilize o Serviço."
+    },
+
+    "eligibility": {
+      "title": "2. Elegibilidade e Conta",
+      "p1": "Você declara ter pelo menos 18 anos ou ser legalmente capaz conforme as leis do seu país. Para utilizar funcionalidades específicas, pode ser necessário criar uma conta, fornecendo informações verdadeiras, completas e atualizadas. Você é responsável por manter a segurança de suas credenciais e por todas as atividades realizadas em sua conta."
+    },
+
+    "permittedUse": {
+      "title": "3. Uso Permitido",
+      "p1": "Você concorda em utilizar o Serviço de forma legal e ética. É estritamente proibido:",
+      "li1": "Violar leis aplicáveis, direitos de terceiros ou estes Termos;",
+      "li2": "Interferir no funcionamento do Serviço ou burlar mecanismos de segurança;",
+      "li3": "Enviar conteúdo malicioso, spam, código nocivo ou que promova atividades ilícitas;",
+      "li4": "Realizar engenharia reversa, scraping não autorizado ou uso automatizado abusivo;",
+      "li5": "Publicar conteúdo difamatório, discriminatório, ofensivo ou ilegal."
+    },
+
+    "billing": {
+      "title": "4. Assinaturas, Pagamentos e Testes",
+      "p1": "Planos pagos, quando existentes, serão cobrados conforme valores e periodicidade exibidos no momento da contratação. Impostos podem ser aplicados. A cobrança é recorrente até o cancelamento. Em testes gratuitos, a assinatura será convertida em paga ao final do período, salvo cancelamento prévio. Pagamentos não são reembolsáveis, exceto quando exigido por lei."
+    },
+
+    "cancellation": {
+      "title": "5. Cancelamento e Encerramento",
+      "p1": "Você pode cancelar a qualquer momento nas configurações da conta; o acesso permanece até o fim do ciclo já pago. Podemos suspender ou encerrar o acesso em caso de violação destes Termos, risco à segurança, fraude ou exigência legal."
+    },
+
+    "ip": {
+      "title": "6. Propriedade Intelectual",
+      "p1": "Todos os direitos sobre o Serviço e seus conteúdos (marcas, códigos, layouts, textos, imagens e demais elementos) pertencem a nós ou a licenciantes. Você recebe licença limitada, revogável e não exclusiva para uso pessoal, não comercial, conforme estes Termos."
+    },
+
+    "ugc": {
+      "title": "7. Conteúdo do Usuário",
+      "p1": "Ao enviar ou criar conteúdo no Serviço, você nos concede licença mundial, não exclusiva, gratuita e sublicenciável para hospedar, armazenar, processar, reproduzir e exibir esse conteúdo com a finalidade de operar e melhorar o Serviço. Você declara possuir os direitos necessários sobre o conteúdo enviado e que este não viola direitos de terceiros."
+    },
+
+    "privacy": {
+      "title": "8. Privacidade e Dados",
+      "p1": "O tratamento de dados pessoais ocorre conforme nossa Política de Privacidade. Você é responsável por manter seus dados atualizados e por configurar adequadamente suas preferências de privacidade."
+    },
+
+    "availability": {
+      "title": "9. Disponibilidade e Modificações",
+      "p1": "O Serviço é fornecido “no estado em que se encontra”. Podemos modificar, suspender ou descontinuar funcionalidades a qualquer momento, com ou sem aviso prévio. Envidaremos esforços razoáveis para comunicar mudanças relevantes."
+    },
+
+    "disclaimer": {
+      "title": "10. Isenções e Limitação de Responsabilidade",
+      "p1": "Na máxima extensão permitida por lei, não garantimos que o Serviço será livre de erros, seguro ou ininterrupto. Não seremos responsáveis por danos indiretos, incidentais, especiais, consequentes ou perda de lucros, dados ou reputação. Nossa responsabilidade total, quando aplicável, limita-se ao valor pago por você nos 12 meses anteriores ao evento que deu causa ao pedido."
+    },
+
+    "indemnity": {
+      "title": "11. Indenização",
+      "p1": "Você concorda em indenizar e isentar-nos de responsabilidades por quaisquer reclamações, perdas, custos e despesas decorrentes do uso indevido do Serviço, violação destes Termos ou infração de direitos de terceiros por você."
+    },
+
+    "links": {
+      "title": "12. Links de Terceiros",
+      "p1": "O Serviço pode conter links para sites de terceiros. Não endossamos nem nos responsabilizamos por conteúdos, políticas ou práticas desses sites."
+    },
+
+    "comms": {
+      "title": "13. Comunicações",
+      "p1": "Podemos enviar comunicações operacionais, administrativas e promocionais. Você pode gerenciar preferências de marketing a qualquer momento, sem prejuízo de mensagens essenciais ao funcionamento do Serviço."
+    },
+
+    "changes": {
+      "title": "14. Alterações destes Termos",
+      "p1": "Podemos atualizar estes Termos periodicamente. Publicaremos a versão revisada com a nova data de atualização. O uso contínuo do Serviço após as alterações constitui aceitação dos Termos revisados."
+    },
+
+    "law": {
+      "title": "15. Lei Aplicável e Foro",
+      "p1": "Estes Termos são regidos pelas leis do seu país ou, na ausência de especificação, pelas leis do Brasil. Fica eleito o foro de seu domicílio para dirimir controvérsias, salvo disposição legal em contrário."
+    },
+
+    "contact": {
+      "title": "16. Contato",
+      "p1": "Dúvidas ou solicitações podem ser enviadas para nosso suporte: contato@seudominio.com."
+    },
+
+    "note": "Nota: Este texto é um modelo informativo e não substitui assessoria jurídica. Personalize conforme seu produto e consulte um(a) advogado(a) para adequações legais específicas (LGPD, consumidor, etc.)."
+  },
+  "aup": {
+    "title": "Política de Uso",
+    "lastUpdated": "Última atualização: {{date}}",
+
+    "scope": {
+      "title": "1. Escopo",
+      "p1": "Esta Política de Uso complementa os Termos de Uso e define regras para utilização responsável do Serviço e de seus recursos, incluindo APIs, aplicativos e integrações."
+    },
+
+    "responsibleUse": {
+      "title": "2. Uso Responsável",
+      "p1": "Utilize o Serviço de forma ética, respeitando leis aplicáveis, direitos de terceiros e a experiência dos demais usuários. Proteja suas credenciais e dispositivos."
+    },
+
+    "prohibited": {
+      "title": "3. Condutas Proibidas",
+      "p1": "É estritamente proibido:",
+      "li1": "Abusar do Serviço por automações agressivas, spam, ou tentativa de sobrecarga (DoS/DDoS);",
+      "li2": "Explorar vulnerabilidades, burlar autenticação ou desativar mecanismos de segurança;",
+      "li3": "Publicar conteúdo ilegal, difamatório, discriminatório, sexualmente explícito ou que incite violência/ódio;",
+      "li4": "Violar propriedade intelectual, privacidade ou dados de terceiros;",
+      "li5": "Distribuir malware, phishing, scam, ou coletar dados sem consentimento adequado;",
+      "li6": "Usar o Serviço para atividades que infrinjam leis locais ou internacionais."
+    },
+
+    "security": {
+      "title": "4. Segurança",
+      "p1": "Relate imediatamente suspeitas de falhas de segurança. Não realize testes de intrusão sem autorização por escrito. O uso de tokens e chaves deve seguir boas práticas (rotação, sigilo, escopo mínimo)."
+    },
+
+    "rates": {
+      "title": "5. Limites de Uso e Taxas",
+      "p1": "Podem existir limites de requisições, taxa de eventos e cotas por conta ou chave de API. Atingir limites pode causar degradação temporária, bloqueio ou custos adicionais conforme seu plano."
+    },
+
+    "dataPrivacy": {
+      "title": "6. Dados e Privacidade",
+      "p1": "O tratamento de dados pessoais deve observar a legislação aplicável (ex.: LGPD/GDPR) e nossa Política de Privacidade. Evite armazenar dados sensíveis sem base legal e medidas de segurança adequadas."
+    },
+
+    "content": {
+      "title": "7. Padrões de Conteúdo",
+      "p1": "Conteúdos gerados e compartilhados devem ser relevantes ao propósito do Serviço e respeitar direitos autorais, políticas de comunidade e leis de publicidade, consumidor e propriedade intelectual."
+    },
+
+    "enforcement": {
+      "title": "8. Fiscalização e Medidas",
+      "p1": "Em caso de violação, poderemos advertir, limitar recursos, suspender ou encerrar contas, remover conteúdo e acionar autoridades, conforme gravidade e legislação aplicável."
+    },
+
+    "reporting": {
+      "title": "9. Denúncias",
+      "p1": "Para reportar abuso, segurança ou violações, entre em contato pelo canal de suporte indicado. Inclua evidências, datas, URLs e, se possível, IDs de solicitação."
+    },
+
+    "children": {
+      "title": "10. Crianças e Adolescentes",
+      "p1": "Salvo disposição específica, o Serviço não se destina a menores de 13 anos. Para idades superiores, podem ser exigidos consentimentos e controles parentais conforme a lei local."
+    },
+
+    "changes": {
+      "title": "11. Alterações desta Política",
+      "p1": "Podemos atualizar esta Política periodicamente. Publicaremos a versão revisada com a nova data. O uso contínuo após alterações indica concordância com a Política revisada."
+    },
+
+    "contact": {
+      "title": "12. Contato",
+      "p1": "Dúvidas ou denúncias: contato@seudominio.com."
+    },
+
+    "note": "Este documento é um modelo informativo e não substitui assessoria jurídica. Adapte ao seu produto e consulte um(a) advogado(a) para obrigações específicas."
   }
 }

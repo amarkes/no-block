@@ -3,12 +3,13 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import LoginImageComponent from "./image";
 import { useTranslation } from "react-i18next";
-import FloatingActions from "@/components/floating-actions";
+import { useNavigate } from "react-router-dom";
+import LoginImageComponent from "./image";
 
 export default function LoginPage({ className, ...props }) {
   const { t } = useTranslation();
+  const navigate = useNavigate();
 
   return (
     <div className="bg-muted flex min-h-svh flex-col items-center justify-center p-6 md:p-10">
@@ -16,7 +17,7 @@ export default function LoginPage({ className, ...props }) {
         <div className={cn("flex flex-col gap-6", className)} {...props}>
           <Card className="overflow-hidden p-0">
             <CardContent className="grid p-0 md:grid-cols-2">
-              <form className="p-6 md:p-8">
+              <div className="p-6 md:p-8">
                 <div className="flex flex-col gap-6">
                   <div className="flex flex-col items-center text-center">
                     <h1 className="text-2xl font-bold">{t("login.title")}</h1>
@@ -30,7 +31,6 @@ export default function LoginPage({ className, ...props }) {
                       id="email"
                       type="email"
                       placeholder="m@example.com"
-                      required
                     />
                   </div>
                   <div className="grid gap-3">
@@ -43,7 +43,7 @@ export default function LoginPage({ className, ...props }) {
                         {t("login.forgot")}
                       </a>
                     </div>
-                    <Input id="password" type="password" required />
+                    <Input id="password" type="password" />
                   </div>
                   <Button type="submit" className="w-full">
                     {t("login.forgot")}
@@ -54,19 +54,23 @@ export default function LoginPage({ className, ...props }) {
                       Sign up
                     </a>
                   </div> */}
-                  <div className="relative flex items-center justify-center">
-                    <FloatingActions />
-                  </div>
                 </div>
-              </form>
+              </div>
               <div className="bg-muted relative hidden md:block">
                 <LoginImageComponent />
               </div>
             </CardContent>
           </Card>
           <div className="text-muted-foreground *:[a]:hover:text-primary text-center text-xs text-balance *:[a]:underline *:[a]:underline-offset-4">
-            {t("login.info")} <a href="#">{t("login.info1")}</a>{" "}
-            {t("login.info2")} <a href="#">{t("login.info3")}</a>.
+            {t("login.info")}{" "}
+            <a onClick={() => navigate("/terms")} className="cursor-pointer">
+              {t("login.info1")}
+            </a>{" "}
+            {t("login.info2")}{" "}
+            <a onClick={() => navigate("/policy")} className="cursor-pointer">
+              {t("login.info3")}
+            </a>
+            .
           </div>
         </div>
       </div>

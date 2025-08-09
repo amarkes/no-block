@@ -5,11 +5,24 @@
     "email": "Email",
     "password": "Password",
     "button": "Login",
+    "wait": "Waiting",
     "forgot": "Forgot your password?",
     "info": "By using our system, you agree to our",
     "info1": "Terms of Service",
     "info2": "and",
-    "info3": "Privacy Policy"
+    "info3": "Privacy Policy",
+    "signUp": "Don't have an account?",
+    "signUpButton": "Sign Up"
+  },
+  "signUp": {
+    "title": "Welcome",
+    "description": "Enter your details",
+    "email": "Email",
+    "password": "Password",
+    "button": "Sign Up",
+    "wait": "Wait",
+    "signIn": "Already have an account?",
+    "signInButton": "Sign In"
   },
   "terms": {
     "title": "Terms of Use",

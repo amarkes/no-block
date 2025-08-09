@@ -9,6 +9,8 @@ import Protected from '@/lib/Protected';
 import { Toaster } from 'sonner';
 import SignUpPage from "./pages/sign-up";
 import Dashboard from './pages/dahsboard';
+import ForgotPage from './pages/forgot';
+import ResetPasswordPage from './pages/reset-password';
 
 export default function App() {
   return (
@@ -18,7 +20,8 @@ export default function App() {
           <Routes>
 
             <Route path="/login" element={<LoginPage />} />
-            <Route path="/forgot" element={<LoginPage />} />
+            <Route path="/forgot" element={<ForgotPage />} />
+            <Route path="/reset-password" element={<ResetPasswordPage />} />
             <Route path="/sign-up" element={<SignUpPage />} />
             <Route path="/home" element={<HomePage />} />
             <Route path="/terms" element={<TermsPage />} />

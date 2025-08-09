@@ -52,12 +52,6 @@ export default function SignUpPage({ className, ...props }) {
                   <div className="grid gap-3">
                     <div className="flex items-center">
                       <Label htmlFor="password">{t("login.password")}</Label>
-                      <a
-                        onClick={() => navigate("/forgot")}
-                        className="ml-auto text-sm underline-offset-2 hover:underline"
-                      >
-                        {t("login.forgot")}
-                      </a>
                     </div>
                     <Input id="password" type="password" value={password} onChange={(e) => setPassword(e.target.value)} />
                   </div>

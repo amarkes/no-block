@@ -24,6 +24,17 @@
     "signIn": "Já tem conta?",
     "signInButton": "Logar"
   },
+  "forgot": {
+    "title": "Esqueceu sua senha?",
+    "description": "Forneça seu email para receber um link de recuperação",
+    "email": "Email",
+    "password": "Sua nova senha",
+    "re-password": "Repita sua senha",
+    "button": "Enviar",
+    "wait": "Enviando",
+    "signIn": "Já tem conta?",
+    "signInButton": "Logar"
+  },
   "terms": {
     "title": "Termos de Uso",
     "lastUpdated": "Última atualização: {{date}}",

@@ -24,6 +24,17 @@
     "signIn": "Already have an account?",
     "signInButton": "Sign In"
   },
+  "forgot": {
+    "title": "Forgot you login?",
+    "description": "Provide your email to receive a recovery link",
+    "email": "Email",
+    "password": "New Password",
+    "re-password": "New Password again",
+    "button": "Send",
+    "wait": "Sending",
+    "signIn": "Already have an account?",
+    "signInButton": "Sign In"
+  },
   "terms": {
     "title": "Terms of Use",
     "lastUpdated": "Last updated: {{date}}",

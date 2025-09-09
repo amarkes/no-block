@@ -4,12 +4,11 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { useTranslation } from "react-i18next";
-import { useNavigate } from "react-router-dom";
 import LoginImageComponent from "./image";
+import PoliceComponent from "@/components/police";
 
 export default function LoginPage({ className, ...props }) {
   const { t } = useTranslation();
-  const navigate = useNavigate();
 
   return (
     <div className="bg-muted flex min-h-svh flex-col items-center justify-center p-6 md:p-10">
@@ -43,7 +42,11 @@ export default function LoginPage({ className, ...props }) {
                         {t("login.forgot")}
                       </a>
                     </div>
-                    <Input id="password" type="password" />
+                    <Input
+                      id="password"
+                      type="password"
+                      placeholder="******"
+                    />
                   </div>
                   <Button className="w-full cursor-pointer">
                     {t("login.forgot")}
@@ -61,17 +64,7 @@ export default function LoginPage({ className, ...props }) {
               </div>
             </CardContent>
           </Card>
-          <div className="text-muted-foreground *:[a]:hover:text-primary text-center text-xs text-balance *:[a]:underline *:[a]:underline-offset-4">
-            {t("login.info")}{" "}
-            <a onClick={() => navigate("/terms")} className="cursor-pointer">
-              {t("login.info1")}
-            </a>{" "}
-            {t("login.info2")}{" "}
-            <a onClick={() => navigate("/policy")} className="cursor-pointer">
-              {t("login.info3")}
-            </a>
-            .
-          </div>
+          <PoliceComponent />
         </div>
       </div>
     </div>

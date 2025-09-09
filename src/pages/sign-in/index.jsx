@@ -4,10 +4,12 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { useTranslation } from "react-i18next";
+import { useNavigate } from "react-router-dom";
 import LoginImageComponent from "./image";
 import { useState } from 'react';
 import { useAuth } from '@/context/AuthContext';
 import { toast } from 'sonner';
+import PoliceComponent from "@/components/police";
 
 export default function LoginPage({ className, ...props }) {
   const { t } = useTranslation();

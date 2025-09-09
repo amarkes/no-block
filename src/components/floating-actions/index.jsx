@@ -22,6 +22,7 @@ export default function FloatingActions() {
           size="icon"
           onClick={() => i18n.changeLanguage("pt")}
           aria-label="Português"
+          className="cursor-pointer"
         >
           🇧🇷
         </Button>
@@ -30,6 +31,7 @@ export default function FloatingActions() {
           size="icon"
           onClick={() => i18n.changeLanguage("en")}
           aria-label="English"
+          className="cursor-pointer"
         >
           🇺🇸
         </Button>
@@ -41,7 +43,7 @@ export default function FloatingActions() {
         size="icon"
         className={`${
           open ? "rounded-none" : "rounded-r-none rounded-l-full"
-        } shadow-lg h-11`}
+        } shadow-lg h-11 cursor-pointer`}
         onClick={() => setOpen(!open)}
         aria-label={open ? "Fechar" : "Abrir"}
       >

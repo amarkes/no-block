@@ -1,4 +1,4 @@
-import { useEffect, useContext } from "react";
+import { useEffect, useContext, useState } from "react";
 import DataTableDefault from "./data-table";
 import ServiceContext from './context';
 import UserCreationForm from './userCreationForm';
@@ -19,6 +19,8 @@ export default function ListUsersPage(props) {
     original
   } = useContext(ServiceContext);
 
+  const [loading, setLoading] = useState(false);
+
   const _getData = () => {
     const params = {
       useCache: false,
@@ -37,12 +39,14 @@ export default function ListUsersPage(props) {
   }, [model]);
 
   async function fetchData() {
+    setLoading(true);
     const arr = [];
     const result = await _getData();
     result.getAllPages(res => {
       arr.push(...res.data.data);
       if (!result?.hasNextPage()) {
         setList(arr);
+        setLoading(false);
       }
     });
   }
@@ -66,7 +70,6 @@ export default function ListUsersPage(props) {
   };
   const handleChange = async (id, fields) => {
     try {
-      console.log(fields)
       await patchServices(id, fields).then(res => {
         fetchData();
         setIsShowForm(false);
@@ -88,8 +91,13 @@ export default function ListUsersPage(props) {
         Adicionar
       </button>
 
-      {list && model ?
-        <DataTableDefault data={list} /> : null}
+      {loading ? (
+        <div className="flex items-center justify-center py-10">
+          <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-primary"></div>
+        </div>
+      ) : list && model ? (
+        <DataTableDefault data={list} />
+      ) : null}
 
       {isShowForm && (
         <UserCreationForm

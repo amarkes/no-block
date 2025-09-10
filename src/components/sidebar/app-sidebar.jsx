@@ -35,7 +35,7 @@ const data = {
       items: [
         {
           title: "Categorias",
-          url: "#",
+          url: "cashflow-categories",
         },
         {
           title: "Transações",

@@ -12,18 +12,21 @@ import PolicyPage from "@/pages/policy";
 import AuthProvider from "@/context/AuthContext";
 import Protected from "@/lib/Protected";
 import { Toaster } from "sonner";
+import { AlertDialogProvider } from "@/components/alert/AlertDialogContext";
 import SignUpPage from "./pages/sign-up";
 import Dashboard from "./pages/dahsboard";
 import ForgotPage from "./pages/forgot";
 import ResetPasswordPage from "./pages/reset-password";
 import UserListPage from "./pages/users";
+import CashflowCategoriesPage from "./pages/cashflow-cotegories";
 
 export default function App() {
   return (
     <>
       <Router>
         <AuthProvider>
-          <Routes>
+          <AlertDialogProvider>
+            <Routes>
             <Route path="/login" element={<LoginPage />} />
             <Route path="/forgot" element={<ForgotPage />} />
             <Route path="/reset-password" element={<ResetPasswordPage />} />
@@ -40,12 +43,14 @@ export default function App() {
               }
             >
               <Route path="users"  element={<UserListPage />} />
+              <Route path="cashflow-categories"  element={<CashflowCategoriesPage />} />
             </Route>
             {/* raiz -> sempre manda pra /home */}
             <Route path="/" element={<Navigate to="/login" replace />} />
             {/* 404 */}
             <Route path="*" element={<Navigate to="/login" replace />} />
-          </Routes>
+            </Routes>
+          </AlertDialogProvider>
         </AuthProvider>
       </Router>
       <div className="relative flex items-center justify-center">

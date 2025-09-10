@@ -73,12 +73,12 @@ const ActionsCell = ({ row }) => {
         const result = await getAll(params);
 
         if (!result || typeof result.getAllPages !== 'function') {
-            console.error("Erro: resultado inválido de getAll", result);
             return;
         }
 
         await result.getAllPages(res => {
-            arr.push(...res.data.results);
+            const data = res.data?.data || res.data?.results || res.data || [];
+            arr.push(...data);
             if (!result?.hasNextPage()) {
                 setList(arr);
             }

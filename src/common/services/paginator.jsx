@@ -119,7 +119,7 @@ export default class Paginator {
 
     hasNextPage() {
         const res = this.requestsMade.get(this.config.url, this.config.config.params);
-        return res ? Boolean(res.data.meta.hasNextPage) : false;
+        return res ? Boolean(res?.data?.data?.length !== res?.data?.count) : false;
     }
 
     async _doRequest() {

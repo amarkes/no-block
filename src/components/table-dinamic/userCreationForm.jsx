@@ -51,7 +51,6 @@ export default function UserCreationForm({ fields, onSubmit, onChange, onCancel,
     };
 
     const renderInput = (field) => {
-        console.log(field)
         switch (field.fieldType) {
             case 'checkbox':
                 return (<input
